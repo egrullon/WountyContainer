@@ -36,4 +36,17 @@ docker run -it -v /tmp/:/opt/projects wounty:v2
 ```
 wounty example.com
 ```
+## Or
+
+## Docker Install (from dockerhub)
+```
+docker pull egrullon/wounty:v2
+```
+```
+docker run -it -v /tmp/:/opt/projects egrullon/wounty:v2
+```
+### Usage:
+```
+wounty example.com
+```
 
