@@ -43,12 +43,6 @@ RUN go install github.com/tomnomnom/httprobe@latest
 RUN go install github.com/tomnomnom/waybackurls@latest
 RUN go install github.com/hakluke/hakrawler@latest
 
-# SecList
-RUN echo && echo "Downloading SecList..." && echo
-WORKDIR /usr/share/
-RUN git clone https://github.com/danielmiessler/SecLists.git
-RUN mv /usr/share/SecLists /usr/share/seclists
-
 RUN apt install --assume-yes chromium-browser
 RUN mv /usr/bin/chromium-browser /usr/bin/chromium
 RUN pip3 install dnsgen
